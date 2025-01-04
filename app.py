@@ -27,10 +27,12 @@ else:
 
 method = st.radio("Choose extraction method", ("TF-IDF", "RAKE", "YAKE", "KeyBERT"))
 
-num_keywords = st.slider("Number of Keywords", 5, 20, 10)
+num_keywords = st.slider("Number of Keywords", 2, 10, 5)
 
 # Extract keywords
 keywords = []
+doc = re.sub(r"[^a-zA-Z0-9\s]", "", doc)
+
 
 if method == "TF-IDF":
     tf_idf =TFIDFProcessor()
