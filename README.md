@@ -32,7 +32,6 @@ KeyBERT leverages BERT embeddings and cosine similarity to identify keywords tha
 
 ## 📚 Use Cases
 
-- Document summarization
 - Search Engine Optimization (SEO)
 - Information retrieval
 - Text categorization
